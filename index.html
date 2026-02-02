@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spandana K | Java Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, hsl(180, 30%, 74%), #2163b4);
+            color: #333;
+        }
+
+        nav {
+            background: #0f172a;
+            padding: 18px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: #38bdf8; }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            text-align: center;
+            padding: 50px 15px 40px;
+        }
+
+        .profile-card {
+            background: #111827;
+            display: inline-block;
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+
+        .links a { color: #38bdf8; text-decoration: none; margin: 0 5px; }
+
+        .btn {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .section {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        h2 { border-bottom: 2px solid #2563eb; padding-bottom: 5px; }
+
+        .card {
+            background: #f8fafc;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+        }
+
+        /* CERTIFICATE MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 40px;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            height: 85%;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#summary">Summary</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internship</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certificates</a>
+</nav>
+
+<div class="header">
+    <div class="profile-card">
+        <img src="photo.jpg" class="profile-pic"><br>
+        <h1>Spandana K</h1>
+        <p>Java Developer | Full Stack Enthusiast</p>
+        <p>📞 7019614531 | 📧 spandanak393@gmail.com</p>
+        <div class="links">
+            <a href="http://www.linkedin.com/in/spandana-k-905803325" target="_blank">🔗 LinkedIn</a> |
+            <a href="https://github.com/spandanak186" target="_blank">💻 GitHub</a>
+        </div>
+        <a href="Spandana_Resume.pdf" download>
+            <button class="btn">Download Resume</button>
+        </a>
+    </div>
+</div>
+
+<div class="section" id="summary">
+    <h2>Professional Summary</h2>
+    <div class="card">
+        Java Software Engineer fresher skilled in Core Java, OOP, Data Structures, Spring Boot, REST APIs,
+        React.js, Angular, and MySQL.
+    </div>
+</div>
+
+<div class="section" id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card"><b>Languages:</b> Java, Python, JavaScript, HTML5, CSS3</div>
+    <div class="card"><b>Frameworks:</b> Spring Boot, React.js, Angular, Django, Flask</div>
+    <div class="card"><b>Databases:</b> MySQL, SQLite</div>
+</div>
+
+<div class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <b>Student Marks Management | Java</b><br>
+        Developed a console-based application to manage student academic records efficiently.
+        Applied OOP principles like Encapsulation, Inheritance, and Polymorphism to build modular
+        and reusable code for handling student data and grade calculations.
+    </div>
+
+    <div class="card">
+        <b>Crop Yield Prediction & Climate Impact | Flask, Python, SQLite</b><br>
+        Built a predictive web application that analyzes environmental and climate data to estimate crop yield.
+        Integrated REST APIs for data retrieval and implemented backend logic for processing and prediction.
+        Demonstrates data handling, API integration, and problem-solving skills.
+    </div>
+
+    <div class="card">
+        <b>Blood Bank Management System | Django, Python</b><br>
+        Developed a secure full-stack web application to manage blood donor records, blood inventory,
+        and hospital requests. Implemented role-based authentication and CRUD operations to ensure
+        data security and efficient management of blood stock.
+    </div>
+
+    <div class="card">
+        <b>Hospital Management System | PHP, MySQL</b><br>
+        Created a full-stack web application to streamline hospital operations including patient records,
+        staff management, and appointment scheduling. Integrated REST APIs for real-time updates and
+        applied modular coding practices for a scalable and maintainable system.
+    </div>
+
+    <div class="card">
+        <b>React To-Do Application | React.js, JavaScript, CSS</b><br>
+        Designed a dynamic task management app with real-time UI updates and local storage integration
+        to preserve tasks after refresh. Focused on responsive design for smooth usability across devices.
+    </div>
+
+    <div class="card">
+        <b>Password Strength Tester | Python, Regex</b><br>
+        Built a password validation tool that checks password strength using multiple security rules and
+        regex patterns. Provides instant feedback categorizing passwords as Weak, Medium, or Strong to
+        enhance user security awareness.
+    </div>
+
+    <div class="card">
+        <b>Tic Tac Toe Game | JavaScript, HTML, CSS</b><br>
+        Developed an interactive web-based Tic Tac Toe game with real-time move updates and win detection logic.
+        Implemented DOM manipulation and event handling to create a smooth user experience.
+    </div>
+</div>
+
+
+
+<div class="section" id="internship">
+    <h2>Internship</h2>
+    <div class="card">
+        <b>SuprMentr Technologies Pvt. Ltd</b><br>
+          Developed a password strength testing tool using Python & regex, providing real-time feedback 
+(Weak/Medium/Strong).  <br> Enhanced user security by Integrated 10+ regex patterns for secure coding.
+
+    </div>
+</div>
+
+<div class="section" id="education">
+    <h2>Education</h2>
+    <div class="card"><b>BE Information Science</b> – BIET | 2025</div>
+    <div class="card"><b>PUC</b> – Mandara PU College</div>
+</div>
+
+<div class="section" id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="card">
+        <b>Full Stack Development – KodNest</b><br><br>
+        <button class="btn" onclick="openModal('https://drive.google.com/file/d/1t8f05yGa4SDMUjMqV0yAP-xUyj5ngSZb/preview')">View Certificate 🔗</button>
+    </div>
+
+    <div class="card">
+        <b>Java Full Stack Training – BIET & Seventh Sense</b><br><br>
+        <button class="btn" onclick="openModal('https://drive.google.com/file/d/1pH8BUzVfTxOsoF9WSAUV-X2nySmXxiSx/preview')">View Certificate 🔗</button>
+    </div>
+
+    <div class="card">
+        <b>Cyber Security Internship – SuprMentr & NASSCOM</b><br><br>
+        <button class="btn" onclick="openModal('https://drive.google.com/file/d/1PQz5WwCYLtsxvMdDiwn5RSFHmsE5ubi6/preview')">View Certificate 🔗</button>
+    </div>
+</div>
+
+<!-- MODAL -->
+<div id="certModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe id="certFrame" class="modal-content" frameborder="0"></iframe>
+</div>
+
+<script>
+function openModal(link) {
+    document.getElementById("certModal").style.display = "block";
+    document.getElementById("certFrame").src = link;
+}
+function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+    document.getElementById("certFrame").src = "";
+}
+</script>
+
+</body>
+</html>
